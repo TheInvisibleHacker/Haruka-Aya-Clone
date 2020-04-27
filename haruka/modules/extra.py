@@ -9,6 +9,10 @@ from haruka.modules.disable import DisableAbleCommandHandler
 
 ABUSE_STRINGS = (
     "Fuck off",
+    "Fuck off bitch! Need a hard fuck?", 
+    "Teri maa ki... ", 
+    "You are just a kid! Don't mess with me" ,
+    "Bustard", 
     "Stfu go fuck yourself",
     "Ur mum gey",
     "Ur dad lesbo",
@@ -245,7 +249,7 @@ def table(bot: Bot, update: Update):
             if r <= 45:
                 update.message.reply_text("(╯°□°）╯彡 ┻━┻")
             elif r <= 90:
-                update.message.reply_text("Send money bsdk to buy new table to flip")
+                update.message.reply_text("Send money bsdk my creator @Unknown_Hacker_X so the we can decide something.")
             else:
                 update.message.reply_text("Go do some work instead of flippin tables you helpless fagit.")
 		
