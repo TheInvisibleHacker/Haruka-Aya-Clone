@@ -96,7 +96,7 @@ def gban(bot: Bot, update: Update, args: List[str]):
     ok123 = mention_html(user_chat.id, user_chat.first_name)
 
 
-    text12 = f"*⚡️Another Bitch Goes Off⚡️* RIP {ok123}."
+    text12 = f"*⚡️Another Bitch Goes Off⚡️* RIP Sed {ok123}."
     update.effective_message.reply_text(text12, parse_mode=ParseMode.HTML)
 
     banner = update.effective_user  # type: Optional[User]
@@ -138,7 +138,7 @@ def gban(bot: Bot, update: Update, args: List[str]):
     send_to_list(bot, SUDO_USERS + SUPPORT_USERS,
                    "{} has been successfully gbanned!".format(mention_html(user_chat.id, user_chat.first_name)),
                    html=True)
-    text13 = f"Successfully gbanned {ok123} 🙂 'He Deserve This'."
+    text13 = f"Successfully gbanned {ok123} 🙂 ' Actually this user Deserve This😅'."
     update.effective_message.reply_text(text13, parse_mode=ParseMode.HTML)
 
 
@@ -148,7 +148,7 @@ def ungban(bot: Bot, update: Update, args: List[str]):
 
     user_id = extract_user(message, args)
     if not user_id:
-        message.reply_text("You don't seem to be referring to a person.")
+        message.reply_text("I didn't interacted with this person before🤔.")
         return
 
     user_chat = bot.get_chat(user_id)
@@ -248,7 +248,7 @@ def gmute(bot: Bot, update: Update, args: List[str]):
         return
 
     if int(user_id) in SUDO_USERS:
-        message.reply_text("I spy, with my little eye... a sudo user war! Why are you guys turning on each other?")
+        message.reply_text("I spy, with my little eye... a sudo user war! Why are you guys turning on each other? This is not good!")
         return
 
     if int(user_id) in SUPPORT_USERS:
@@ -345,7 +345,7 @@ def ungmute(bot: Bot, update: Update, args: List[str]):
 
     user_id = extract_user(message, args)
     if not user_id:
-        message.reply_text("You don't seem to be referring to a user.")
+        message.reply_text("I didn't interacted with this person before 🤔.")
         return
 
     user_chat = bot.get_chat(user_id)
@@ -544,7 +544,7 @@ def gkick(bot: Bot, update: Update, args: List[str]):
         message.reply_text("OHHH! Someone's trying to gkick a sudo/support user! *Grabs popcorn*")
         return
     if int(user_id) == OWNER_ID:
-        message.reply_text("Wow! Some's trying to gkick my owner! *Grabs Potato Chips*")
+        message.reply_text("Wow! Some's trying to gkick my owner! Go and fuck your self Bitch! *Grabs Potato Chips*")
         return
         
     if user_id == bot.id:
