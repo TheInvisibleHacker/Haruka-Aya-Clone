@@ -20,13 +20,9 @@ from haruka.modules.helper_funcs.misc import paginate_modules
 from haruka.modules.translations.strings import tld, tld_help 
 from haruka.modules.connection import connected
 
-PM_START = """Hello {}, My Name is {}!
+PM_START = """Hey there! My name is Rose - I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.
 
-You know how hard it is sometimes to manage group so here is the solution for you
-
-I'm group manager bot 🃏
-
-Click /help or Help button below to find out more about how to use me to my full potential.
+Want to add me to your chat? [Click here!](http://telegram.me/MissRoseRoBot?startgroup=botstart) 
 """
 
 
