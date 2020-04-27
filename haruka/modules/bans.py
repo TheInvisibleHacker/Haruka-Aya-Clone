@@ -111,7 +111,7 @@ def temp_ban(bot: Bot, update: Update, args: List[str]) -> str:
         return ""
 
     if user_id == bot.id:
-        message.reply_text(tld(chat.id, "I'm not gonna BAN myself, are you crazy?"))
+        message.reply_text(tld(chat.id, "You know what I'm not going to do? Ban myself."))
         return ""
 
     if not reason:
@@ -156,13 +156,13 @@ def temp_ban(bot: Bot, update: Update, args: List[str]) -> str:
         if excp.message == "Reply message not found":
             # Do not reply
             bot.send_sticker(chat.id, BAN_STICKER)  # banhammer marie sticker
-            message.reply_text(tld(chat.id, "Banned! Person will be banned for {}.").format(time_val), quote=False)
+            message.reply_text(tld(chat.id, "Another one bites the dust. Banned! Person will be banned for {}.").format(time_val), quote=False)
             return log
         else:
             LOGGER.warning(update)
             LOGGER.exception("ERROR banning person %s in chat %s (%s) due to %s", user_id, chat.title, chat.id,
                              excp.message)
-            message.reply_text(tld(chat.id, "Banned!"))
+            message.reply_text(tld(chat.id, "Another One Bites The Dust.. Banned!"))
 
     return ""
 
@@ -229,7 +229,7 @@ def kick(bot: Bot, update: Update, args: List[str]) -> str:
 def kickme(bot: Bot, update: Update):
     user_id = update.effective_message.from_user.id
     if user_id == OWNER_ID:
-        update.effective_message.reply_text("You’re strong. If I try to remove You,I will Never Be Happy In my Life")
+        update.effective_message.reply_text("You’re strong. If I try to remove You,I will Never Be Happy In my Life. You are my Creator!")
         return
     elif is_user_admin(update.effective_chat, user_id):
         update.effective_message.reply_text("Why would I kick an Admin? That sounds like a pretty dumb idea.")
