@@ -32,7 +32,7 @@ def get_note_type(msg: Message):
         text, buttons = button_markdown_parser(args[2], entities=msg.parse_entities() or msg.parse_caption_entities(),
                                                offset=offset)
         if buttons:
-            data_type = Types.BUTTON_TEXT
+            data_type = Types.TEXT
         else:
             data_type = Types.TEXT
 
@@ -43,7 +43,7 @@ def get_note_type(msg: Message):
             text, buttons = button_markdown_parser(msgtext,
                                                    entities=entities)
             if buttons:
-                data_type = Types.BUTTON_TEXT
+                data_type = Types.TEXT
             else:
                 data_type = Types.TEXT
 
