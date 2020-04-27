@@ -36,7 +36,7 @@ def promote(bot: Bot, update: Update, args: List[str]) -> str:
 
     if not chatD.get_member(bot.id).can_promote_members:
         update.effective_message.reply_text("I can't promote/demote people here! "
-                                            "Make sure I'm admin and can appoint new admins.")
+                                            "Make sure I'm admin and can appoint new admins😅.")
         exit(1)
 
     user_id = extract_user(message, args)
@@ -66,7 +66,7 @@ def promote(bot: Bot, update: Update, args: List[str]) -> str:
                           can_pin_messages=bot_member.can_pin_messages,
                           can_promote_members=bot_member.can_promote_members)
 
-    message.reply_text(tld(chat.id, f"Successfully promoted in *{chatD.title}*!"), parse_mode=ParseMode.MARKDOWN)
+    message.reply_text(tld(chat.id, f"Yay! This guy Successfully promoted in *{chatD.title}*!"), parse_mode=ParseMode.MARKDOWN)
     return f"<b>{html.escape(chatD.title)}:</b>" \
             "\n#PROMOTED" \
            f"\n<b>Admin:</b> {mention_html(user.id, user.first_name)}" \
@@ -91,7 +91,7 @@ def demote(bot: Bot, update: Update, args: List[str]) -> str:
 
     if not chatD.get_member(bot.id).can_promote_members:
         update.effective_message.reply_text("I can't promote/demote people here! "
-                                            "Make sure I'm admin and can appoint new admins.")
+                                            "Make sure I'm admin and can appoint new admins😅.")
         exit(1)
 
     user_id = extract_user(message, args)
@@ -105,7 +105,7 @@ def demote(bot: Bot, update: Update, args: List[str]) -> str:
         return ""
 
     if not user_member.status == 'administrator':
-        message.reply_text(tld(chat.id, "Can't demote what wasn't promoted!"))
+        message.reply_text(tld(chat.id,"Hey! This person wasn't promoted here and how would I demote/promte here!"))
         return ""
 
     if user_id == bot.id:
