@@ -20,19 +20,9 @@ from haruka.modules.helper_funcs.misc import paginate_modules
 from haruka.modules.translations.strings import tld, tld_help 
 from haruka.modules.connection import connected
 
-PM_START = """Hello {}, My Name is {}! Lover Of [This SexY BoI](https://t.me/unknown_hacker_x) . 
+PM_START = """Hey there! My name is Rose - I'm here to help you manage your groups! Hit /help to find out more about how to use me to my full potential.
 
-You Know How Hard It Is Sometimes To Manage Your Groups. So Here Is The Solution For You 🥰 .
-
-I'm World Telegram Groups Manager Maintained By [My Master](https://t.me/Unknown_Hacker_X) . 
-
-Wanna  Get My Status Info And My Updates..? Then Join [This Channel](https://t.me/the_invisible_hacker) . There [My Master](https://t.me/Unknown_Hacker_X) Updates My Status And My Info.
-
-I Know I've Many Commands Than MissRose Bot . So You're Enjoying By Using Me In Your Groups To Manage. Am I Correct? Heya:) Feeling Happy To Heard That! Wanna Donate Me? I Don't Accept Donations.. Alternately Feed Any Homeless Person 🙂 I'll Feel Great. So At Any Cost.. I'm Not Gonna Accept Donations. So I Disabled /donate 🙂 .
-
-Want To Add Me To Your Groups? Yup! Feel Free To Add And Use Me. 
-
-After Starting Me.. Click [ Help ❓] To Know More About My Full Potential Use.
+Want to add me to your chat? [Click here!](http://telegram.me/MissRoseRoBot?startgroup=botstart) 
 """
 
 
