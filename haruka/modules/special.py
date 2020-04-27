@@ -22,9 +22,17 @@ MESSAGES = (
     "Happy birthday ",
     "Heppi burfdey ",
     "Hep burf ",
+    "You born today.. Yay! Now how's the feeling?", 
+    "Yappie BarthDey", 
+    "Oof Yay! It's your birthday today. Now gib party Specially for my creator @Unknown_Hacker_X", 
+    "Bsdk! You were born today. Give party lo de", 
+    "Sir/Madam! Happy Birthday", 
+    "You were born on this day but not today", 
+    "Now Give Party🎉🍻🎈", 
     "Happy day of birthing ",
     "Sadn't deathn't-day ",
     "Oof, you were born today ",
+    "Thank Me Too Coz.. I Wished You This Much"
 )
 
 
