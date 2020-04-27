@@ -39,7 +39,7 @@ def send_rules(update, chat_id, from_pm=False):
         bot.send_message(user.id, text, parse_mode=ParseMode.MARKDOWN)
     elif from_pm:
         bot.send_message(user.id, "The group admins haven't set any rules for this chat yet. "
-                                  "This probably doesn't mean it's lawless though...!")
+                                  "This probably doesn't mean it's lawless though...! For any queries.. Contact my creator @Unknown_Hacker_X")
     elif rules:
         update.effective_message.reply_text("Click the button below to get this group's rules.",
                                             reply_markup=InlineKeyboardMarkup(
@@ -48,7 +48,7 @@ def send_rules(update, chat_id, from_pm=False):
                                                                                                      chat_id))]]))
     else:
         update.effective_message.reply_text("The group admins haven't set any rules for this chat yet. "
-                                            "This probably doesn't mean it's lawless though...!")
+                                            "This probably doesn't mean it's lawless though...! For any queries.. Contact my creator @Unknown_Hacker_X")
 
 
 @run_async
@@ -64,7 +64,7 @@ def set_rules(bot: Bot, update: Update):
         markdown_rules = markdown_parser(txt, entities=msg.parse_entities(), offset=offset)
 
         sql.set_rules(chat_id, markdown_rules)
-        update.effective_message.reply_text("Successfully set rules for this group.")
+        update.effective_message.reply_text("Successfully set rules for this group. If any errors.. Contact my creator @Unknown_Hacker_X")
 
 
 @run_async
